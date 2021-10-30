@@ -3,19 +3,6 @@ const app = express();
 const os = require('os');
 const hostname = os.hostname();
 
-// app.use(express.static('public'));
-
-// app.get('/', (req, res) => {
-//     res.send('This is my first AWS Node App.');
-// });
-
-// app.get('/about', (req, res) => {
-//     res.send({
-//         name: 'Simple Node App',
-//         technology: 'Node Js'
-//     });
-// });
-
 app.set('view engine', 'ejs');
 
 app.get('/', (req, res) => {
