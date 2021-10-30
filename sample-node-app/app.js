@@ -21,17 +21,15 @@ app.set('view engine', 'ejs');
 app.get('/', (req, res) => {
     res.render('pages/index', {
         title: 'Home Page',
-        name: 'DevOps is cool',
-        technology: 'Docker',
+        description: 'DevOps is cool',
         hostname: hostname
     });
 });
 
 app.get('/about', (req, res) => {
     res.render('pages/about', {
-        title: 'What is DevOps',
-        name: 'Get to know more',
-        technology: 'Node Js',
+        title: 'About Page',
+        description: 'DevOps is the combination of cultural philosophies, practices, and tools that increases an organization’s ability to deliver applications and services at high velocity: evolving and improving products at a faster pace than organizations using traditional software development and infrastructure management processes.',
         hostname: hostname
     });
 });
